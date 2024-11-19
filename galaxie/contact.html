@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Brooklyn Offshore Limited for enquiries and feedback regarding marine solutions and services.">
+  <title>Contact Us - Brooklyn Offshore Limited</title>
+  <link rel="stylesheet" href="../bootstrap-5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <script src="../bootstrap-5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .navbar-brand { font-weight: bold; }
+    .hero { background: url('marine-background.jpg') center/cover; height: 60vh; }
+    .services, .about, .contact { padding: 40px 0; }
+    .social-icons i { margin: 0 10px; font-size: 1.5rem; color: #ffffff; transition: color 0.3s; }
+    .social-icons i:hover { color: #007bff; }
+    .active { color: #007bff; }
+    .contact-form { max-width: 600px; margin: 0 auto; }
+    footer .social-icons { margin-top: 10px; }
+  </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Brooklyn Offshore Limited</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Brooklyn Offshore Limited</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body bg-black">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Go</button>
+          </form>
+        </div>
+      </div>
+    </div>
+</nav>
+
+<!-- Contact Section -->
+<div class="container flex-grow-1 py-5">
+  <h2 class="text-center">Contact Us</h2>
+  <p class="text-center">For enquiries and/or feedback, reach out to us using the form below!</p>
+  <div class="contact-form">
+    <form action="/submit-form" method="POST">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" name="name" required aria-label="Your Name">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email" required aria-label="Your Email">
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" name="message" rows="4" required aria-label="Your Message"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-black text-white text-center py-4 mt-auto">
+  <p>&copy; 2024 Brooklyn Offshore Limited. All Rights Reserved.</p>
+  <p>Connect with us</p>
+  <div class="social-icons">
+    <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+    <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.nav-link').forEach(link => {
+    if (link.href === window.location.href) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
+</script>
+
+</body>
+</html>

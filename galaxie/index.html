@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Brooklyn Offshore Limited</title>
+  <style>
+    .navbar-brand { font-weight: bold; }
+    .hero { background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://images.unsplash.com/photo-1632517306067-b54ab4d1f98d?q=80&w=3172&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover; height: 60vh; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); }
+    .services, .about, .contact { padding: 40px 0; }
+    .social-icons i { margin: 0 10px; font-size: 1.5rem; color: #ffffff; transition: color 0.3s; }
+    .social-icons i:hover { color: #007bff; }
+  </style>
+  <link rel="stylesheet" href="../bootstrap-5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <script src="../bootstrap-5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="../css/galaxie.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Brooklyn Offshore Limited</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Brooklyn Offshore Limited</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body bg-black">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex mt-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Go</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero d-flex align-items-center justify-content-center text-white flex-grow-1">
+  <h1>Welcome to Brooklyn Offshore Limited</h1>
+</div>
+
+<!-- Content Section -->
+<div class="container text-center py-5" style="margin-top: 50px; margin-bottom: 50px;">
+  <div id="marineCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000" data-bs-pause="hover">
+    <!-- Carousel Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#marineCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#marineCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#marineCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+  
+    <!-- Carousel Inner -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FyZ298ZW58MHx8MHx8fDA%3D" class="d-block w-100" alt="Cargo Ship in the Sea">
+        <div class="carousel-caption d-md-block">
+          <h3 style="color: #ffffff; text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);">Reliable Cargo Transport</h3>
+          <p style="color: #f0f0f0;">Ensuring safe and timely delivery across global routes.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://plus.unsplash.com/premium_photo-1661962366644-4b050933581a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTN8fGNhcmdvJTIwd29ya2Vyc3xlbnwwfHwwfHx8MA%3D%3D" class="d-block w-100" alt="Docked Ship at Port">
+        <div class="carousel-caption d-md-block">
+          <h3 style="color: #ffffff; text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);">Advanced Port Operations</h3>
+          <p style="color: #f0f0f0;">Efficient loading and unloading with modern technology.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://plus.unsplash.com/premium_photo-1682129558527-f428f5027afb?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDl8fGNhcmdvJTIwd29ya2Vyc3xlbnwwfHwwfHx8MA%3D%3D" class="d-block w-100" alt="Shipping Crew Working">
+        <div class="carousel-caption d-md-block">
+          <h3 style="color: #ffffff; text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);">Expert Marine Services</h3>
+          <p style="color: #f0f0f0;">Experienced crews ensuring top-notch service quality.</p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#marineCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#marineCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <svg xmlns="http://www.w3.org/2000/svg" width=40px height=40px viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M176 24c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40c-35.3 0-64 28.7-64 64l-40 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l40 0 0 56-40 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l40 0 0 56-40 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l40 0c0 35.3 28.7 64 64 64l0 40c0 13.3 10.7 24 24 24s24-10.7 24-24l0-40 56 0 0 40c0 13.3 10.7 24 24 24s24-10.7 24-24l0-40 56 0 0 40c0 13.3 10.7 24 24 24s24-10.7 24-24l0-40c35.3 0 64-28.7 64-64l40 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-40 0 0-56 40 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-40 0 0-56 40 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-40 0c0-35.3-28.7-64-64-64l0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40-56 0 0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40-56 0 0-40zM160 128l192 0c17.7 0 32 14.3 32 32l0 192c0 17.7-14.3 32-32 32l-192 0c-17.7 0-32-14.3-32-32l0-192c0-17.7 14.3-32 32-32zm192 32l-192 0 0 192 192 0 0-192z"/></svg>
+      <h1>Latest Technology</h1>
+      <p>Technology and its application are fundamental at BOL. We understand the role of technology in providing an exceptional customer experience. For this reason, our processes, products, and services are built around modern technology to help us deliver your shipments cheaper, safely, and at the speed of light.</p>
+    </div>
+    <div class="col">
+      <svg xmlns="http://www.w3.org/2000/svg" width=40px height= 40px viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M264.5 5.2c14.9-6.9 32.1-6.9 47 0l218.6 101c8.5 3.9 13.9 12.4 13.9 21.8s-5.4 17.9-13.9 21.8l-218.6 101c-14.9 6.9-32.1 6.9-47 0L45.9 149.8C37.4 145.8 32 137.3 32 128s5.4-17.9 13.9-21.8L264.5 5.2zM476.9 209.6l53.2 24.6c8.5 3.9 13.9 12.4 13.9 21.8s-5.4 17.9-13.9 21.8l-218.6 101c-14.9 6.9-32.1 6.9-47 0L45.9 277.8C37.4 273.8 32 265.3 32 256s5.4-17.9 13.9-21.8l53.2-24.6 152 70.2c23.4 10.8 50.4 10.8 73.8 0l152-70.2zm-152 198.2l152-70.2 53.2 24.6c8.5 3.9 13.9 12.4 13.9 21.8s-5.4 17.9-13.9 21.8l-218.6 101c-14.9 6.9-32.1 6.9-47 0L45.9 405.8C37.4 401.8 32 393.3 32 384s5.4-17.9 13.9-21.8l53.2-24.6 152 70.2c23.4 10.8 50.4 10.8 73.8 0z"/></svg>
+      <h1>Social Commerce</h1>
+      <p>Pivotal to successful social commerce transactions is the ability for the end-user to receive items where and when needed. With an unmatched route network spanning urban and rural communities, BOL is the solution to efficient last-mile delivery. As a merchant, you only have to think about selling your products while BOL delivers to your customers worldwide.</p>
+    </div>
+    <div class="col">
+      <svg xmlns="http://www.w3.org/2000/svg"  width= 40px height= 40px viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>
+      <h1>Guaranteed Delivery</h1>
+      <p>We are conscious of the relationship between time and money and utilize our resources optimally to meet your delivery needs. Our service commitment to you is hassle-free delivery. We are large enough to efficiently handle deliveries for large corporations yet small enough to deploy innovative delivery solutions that help small businesses.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-black text-white text-center py-4 mt-auto">
+  <p>&copy; 2024 Brooklyn Offshore Limited. All Rights Reserved.</p>
+  <p>Connect with us</p>
+  <div class="social-icons">
+    <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+    <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+  </div>
+</footer>
+<script>
+  document.querySelectorAll('.nav-link').forEach(link => {
+    if (link.href === window.location.href) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
+</script>
+</body>
+</html>
